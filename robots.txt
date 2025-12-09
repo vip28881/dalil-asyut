@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vip28881.github.io/dalil-asyut/sitemap.xml
