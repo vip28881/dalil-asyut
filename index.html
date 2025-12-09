@@ -82,10 +82,16 @@
         }
         .app-badge {
             margin-top: 20px;
+            text-align: center;
         }
         .app-badge img {
-            height: 50px;
-            margin: 0 5px;
+            height: 70px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .app-badge img:hover {
+            transform: scale(1.05);
         }
         @media (max-width: 600px) {
             body {
@@ -96,6 +102,9 @@
             }
             .header h1 {
                 font-size: 1.8em;
+            }
+            .app-badge img {
+                height: 60px;
             }
         }
     </style>
@@ -126,7 +135,7 @@
         <h2>حمل التطبيق الآن</h2>
         <p>متوفر الآن على متجر جوجل بلاي</p>
         <div class="app-badge">
-            <a href="https://play.google.com/store/apps/details?id=com.your.package.name" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.dalilasyut.app" target="_blank">
                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/ar_badge_web_generic.png" alt="حمل من Google Play">
             </a>
         </div>
