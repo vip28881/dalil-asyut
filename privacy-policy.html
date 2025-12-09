@@ -1,285 +1,254 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE">
     <title>سياسة الخصوصية - دليل أسيوط</title>
-    <meta name="description" content="سياسة الخصوصية الخاصة بتطبيق دليل أسيوط، توضح كيفية جمع البيانات واستخدامها وحمايتها.">
-    <link rel="canonical" href="https://yourdomain.com/privacy-policy">
-
     <style>
         :root {
-            --primary-color: #1a73e8;
-            --secondary-color: #0d47a1;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
-            --border-color: #e0e0e0;
-            --box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+            --white: #ffffff;
+            --gray: #6b7280;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', 'Tajawal', sans-serif;
-            line-height: 1.8;
-            color: var(--text-color);
             background-color: var(--light-bg);
-            padding: 20px;
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
         }
 
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--box-shadow);
-            overflow: hidden;
-            margin-bottom: 30px;
+            padding: 20px;
         }
 
-        .header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        header {
+            background-color: var(--primary-color);
             color: white;
-            padding: 30px;
+            padding: 20px 0;
             text-align: center;
             margin-bottom: 30px;
+            box-shadow: var(--shadow);
         }
 
-        .header h1 {
-            font-size: 2.2em;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
             margin-bottom: 10px;
-        }
-
-        .header p {
-            opacity: 0.9;
-            font-size: 1.1em;
-        }
-
-        .content {
-            padding: 0 30px 30px;
         }
 
         h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
             color: var(--primary-color);
-            margin: 30px 0 20px;
+            border-bottom: 2px solid var(--primary-color);
             padding-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
-            font-size: 1.8em;
+            display: inline-block;
         }
 
         h2 {
-            color: var(--primary-color);
+            color: var(--secondary-color);
             margin: 25px 0 15px;
-            font-size: 1.4em;
-            position: relative;
-            padding-right: 15px;
+            font-size: 22px;
         }
 
-        h2:before {
-            content: "";
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 8px;
-            height: 8px;
-            background-color: var(--primary-color);
-            border-radius: 50%;
-        }
-
-        .contact-info h3 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            font-size: 1.2em;
+        .content {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
         }
 
         p {
             margin-bottom: 15px;
-            text-align: justify;
-            color: #444;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         ul {
             margin-right: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         li {
-            margin-bottom: 10px;
-            position: relative;
-            padding-right: 20px;
-            color: #444;
+            margin-bottom: 8px;
         }
 
-        li:before {
-            content: "•";
-            color: var(--primary-color);
-            font-weight: bold;
-            position: absolute;
-            right: 0;
+        .highlight {
+            background-color: #dbeafe;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
         }
 
-        a {
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 40px;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 20px;
             color: var(--primary-color);
             text-decoration: none;
+            font-weight: 600;
             transition: color 0.3s;
         }
 
-        a:hover {
+        .back-to-top:hover {
             color: var(--secondary-color);
             text-decoration: underline;
         }
 
-        a[target="_blank"] {
-            rel:noopener noreferrer;
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
         }
 
-        .contact-info {
-            background-color: #f5f9ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            border-right: 4px solid var(--primary-color);
-        }
-
-        .back-button-box {
-            text-align: center;
-            margin-top: 25px;
-            margin-bottom: 30px;
-        }
-
-        .back-link {
-            display: inline-block;
-            padding: 12px 25px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .back-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-
-        .footer {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 25px 10px;
-            border-top: 1px solid var(--border-color);
-            color: #666;
-            font-size: 0.9em;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--box-shadow);
+        /* Print styles */
+        @media print {
+            header, footer, .back-to-top {
+                display: none;
+            }
+            
+            body {
+                background: none;
+                color: #000;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+            
+            .content {
+                box-shadow: none;
+                padding: 0;
+            }
         }
     </style>
 </head>
-
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">دليل أسيوط</div>
+            <h1>سياسة الخصوصية</h1>
+        </div>
+    </header>
 
     <div class="container">
-        <div class="header">
-            <h1>سياسة الخصوصية</h1>
-            <p>آخر تحديث: 9 ديسمبر 2024</p>
-        </div>
-
         <div class="content">
-
-            <p>مرحباً بكم في سياسة الخصوصية الخاصة بتطبيق "دليل أسيوط". نحن ندرك أهمية الخصوصية ونلتزم بحماية معلوماتك الشخصية. تشرح هذه الوثيقة سياساتنا المتعلقة بجمع المعلومات واستخدامها والكشف عنها عند استخدامك لخدماتنا.</p>
-
+            <p>مرحباً بكم في تطبيق دليل أسيوط. نحن نولي خصوصيتك أهمية قصوى، وهذه السياسة تشرح كيفية جمعنا واستخدامنا ومشاركة معلوماتك الشخصية.</p>
+            
             <h2>1. المعلومات التي نجمعها</h2>
-            <p>عند استخدامك لتطبيق "دليل أسيوط"، قد نقوم بجمع الأنواع التالية من المعلومات:</p>
-
+            <p>عند استخدامك لتطبيق دليل أسيوط، قد نقوم بجمع الأنواع التالية من المعلومات:</p>
             <ul>
-                <li><strong>معلومات الحساب:</strong> الاسم الكامل، البريد الإلكتروني، صورة الملف الشخصي، رقم الهاتف.</li>
-                <li><strong>معلومات الموقع:</strong> نطلب إذنك للوصول إلى موقعك لتقديم خدمات مخصصة.</li>
-                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، معرف الجهاز، IP.</li>
-                <li><strong>بيانات الاستخدام:</strong> الصفحات التي تزورها والميزات التي تستخدمها.</li>
-                <li><strong>معلومات الأعمال:</strong> إذا كنت صاحب نشاط نقوم بجمع بيانات منشأتك.</li>
-                <li><strong>بيانات الاتصال:</strong> سجل المراسلات مع الدعم الفني.</li>
+                <li><strong>معلومات الحساب:</strong> الاسم، البريد الإلكتروني، صورة الملف الشخصي (عند التسجيل عبر جوجل).</li>
+                <li><strong>معلومات الموقع:</strong> المدينة أو المنطقة التي تختارها للبحث عن الخدمات.</li>
+                <li><strong>معلومات الاستخدام:</strong> الصفحات التي تزورها، الأزرار التي تضغط عليها، مدة الاستخدام.</li>
+                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، معرف فريد للجهاز.</li>
             </ul>
 
-            <div class="contact-info">
-                <h3>معلومات الاتصال</h3>
-                <p><strong>البريد الإلكتروني:</strong> <a href="mailto:vip288822@gmail.com">vip288822@gmail.com</a></p>
-                <p><strong>رقم الهاتف:</strong> <a href="tel:+201119366652">+201119366652</a></p>
-                <p><strong>عنوان المكتب:</strong> أسيوط، مصر</p>
-            </div>
-
-            <h2>2. كيفية استخدام معلوماتك</h2>
+            <h2>2. كيفية استخدامنا لمعلوماتك</h2>
+            <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
             <ul>
-                <li>تشغيل التطبيق وتقديم الخدمات.</li>
-                <li>تحسين تجربة المستخدم.</li>
-                <li>إرسال التنبيهات المهمة.</li>
-                <li>تحليل أداء التطبيق.</li>
-                <li>الحماية ومنع الاحتيال.</li>
-                <li>الاتصال بك عند الحاجة.</li>
+                <li>توفير الخدمات المطلوبة وتشغيل التطبيق.</li>
+                <li>تحسين تجربة المستخدم وتطوير ميزات جديدة.</li>
+                <li>إرسال إشعارات هامة بخصوص التطبيق.</li>
+                <li>تحليل استخدام التطبيق لتحسين أدائه.</li>
+                <li>الامتثال للقوانين واللوائح المعمول بها.</li>
             </ul>
 
             <h2>3. مشاركة المعلومات</h2>
+            <p>نحن لا نبيع أو نؤجر معلوماتك الشخصية لأطراف ثالثة. ومع ذلك، قد نشارك معلوماتك في الحالات التالية:</p>
             <ul>
-                <li>مع مزودي الخدمة الموثوقين.</li>
-                <li>عند الامتثال للقانون.</li>
-                <li>في حالة بيع أو دمج الشركة.</li>
-                <li>بموافقتك الصريحة.</li>
+                <li>مع مقدمي الخدمات الذين يساعدوننا في تشغيل التطبيق (مع التزامهم بسرية المعلومات).</li>
+                <li>عندما نعتقد أن الكشف ضروري للامتثال للقوانين أو حماية حقوقنا أو ملكيتنا أو سلامة مستخدمينا.</li>
+                <li>في حالة الاندماج أو البيع أو أي صفقة أخرى تتعلق بأعمالنا.</li>
             </ul>
 
             <h2>4. حماية المعلومات</h2>
+            <p>نحن نعتمد معايير أمان مناسبة لحماية معلوماتك الشخصية من الوصول غير المصرح به أو التعديل أو الكشف أو التدمير. ومع ذلك، لا يمكن ضمان أمان الإنترنت بنسبة 100%.</p>
+
+            <h2>5. ملفات تعريف الارتباط (الكوكيز)</h2>
+            <p>نستخدم ملفات تعريف الارتباط لتذكر تفضيلاتك وتحسين تجربة استخدامك للتطبيق. يمكنك تعطيل ملفات تعريف الارتباط من خلال إعدادات المتصفح.</p>
+
+            <h2>6. روابط لمواقع خارجية</h2>
+            <p>قد يحتوي تطبيقنا على روابط لمواقع خارجية. نحن لسنا مسؤولين عن ممارسات الخصوصية لهذه المواقع، ونشجعك على مراجعة سياسات الخصوصية الخاصة بهم.</p>
+
+            <h2>7. حقوق المستخدم</h2>
+            <p>لديك الحق في:</p>
             <ul>
-                <li>تشفير SSL/TLS.</li>
-                <li>خوادم آمنة.</li>
-                <li>تقييد وصول الموظفين.</li>
-                <li>مراجعات أمنية دورية.</li>
+                <li>الوصول إلى معلوماتك الشخصية التي نحتفظ بها.</li>
+                <li>طلب تصحيح المعلومات غير الدقيقة.</li>
+                <li>طلب حذف معلوماتك الشخصية (مع مراعاة القيود القانونية).</li>
+                <li>سحب موافقتك على معالجة بياناتك.</li>
             </ul>
 
-            <h2>5. حقوقك</h2>
-            <ul>
-                <li>الوصول لبياناتك.</li>
-                <li>طلب التعديل أو الحذف.</li>
-                <li>الاعتراض على المعالجة.</li>
-                <li>سحب الموافقة.</li>
-                <li>نقل البيانات.</li>
-            </ul>
-
-            <h2>6. ملفات تعريف الارتباط</h2>
-            <p>نستخدم الكوكيز لتحسين تجربتك، ويمكنك تعطيلها من المتصفح.</p>
-
-            <h2>7. روابط خارجية</h2>
-            <p>قد يحتوي التطبيق على روابط لمواقع خارجية ولسنا مسؤولين عن سياساتها.</p>
-
-            <h2>8. التغييرات على السياسة</h2>
-            <p>قد نقوم بتحديث هذه السياسة من وقت لآخر وسيتم إعلامك بالتغييرات الجوهرية.</p>
+            <h2>8. تغييرات على سياسة الخصوصية</h2>
+            <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سنقوم بإخطارك بأي تغييرات جوهرية من خلال إشعار بارز في التطبيق أو عبر البريد الإلكتروني.</p>
 
             <h2>9. الاتصال بنا</h2>
-            <div class="contact-info">
-                <p><strong>البريد الإلكتروني:</strong> <a href="mailto:vip288822@gmail.com">vip288822@gmail.com</a></p>
-                <p><strong>رقم الهاتف:</strong> <a href="tel:+201119366652">+201119366652</a></p>
-                <p><strong>عنوان المراسلة:</strong> أسيوط، مصر</p>
-            </div>
+            <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، يرجى الاتصال بنا على:</p>
+            <p>البريد الإلكتروني: <a href="mailto:vip288822@gmail.com" style="color: var(--primary-color); text-decoration: none;">vip288822@gmail.com</a></p>
+            <p>هاتف: <a href="tel:+201119366652" style="color: var(--primary-color); text-decoration: none;">+20 11 1936 6652</a></p>
 
-            <div class="back-button-box">
-                <a href="https://yourdomain.com" class="back-link">العودة إلى الصفحة الرئيسية</a>
-            </div>
+            <p>آخر تحديث: 9 ديسمبر 2025</p>
 
+            <a href="#" class="back-to-top">العودة للأعلى ↑</a>
         </div>
     </div>
 
-    <div class="footer">
-        © 2024 دليل أسيوط — جميع الحقوق محفوظة  
-        <br>
-        آخر تحديث: 9 ديسمبر 2024
-    </div>
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2025 دليل أسيوط</p>
+            <p><a href="index.html" style="color: white; text-decoration: underline;">العودة للصفحة الرئيسية</a></p>
+        </div>
+    </footer>
 
+    <script>
+        // Smooth scrolling for back to top
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
