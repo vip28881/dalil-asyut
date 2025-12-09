@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية - دليل أسيوط</title>
+    <meta name="description" content="سياسة الخصوصية الخاصة بتطبيق دليل أسيوط، توضح كيفية جمع البيانات واستخدامها وحمايتها.">
+
     <style>
         :root {
             --primary-color: #1a73e8;
@@ -87,6 +89,13 @@
             background-color: var(--primary-color);
             border-radius: 50%;
         }
+
+        /* التحسين الجديد */
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
         
         p {
             margin-bottom: 15px;
@@ -125,38 +134,7 @@
             color: var(--secondary-color);
             text-decoration: underline;
         }
-        
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            border-top: 1px solid var(--border-color);
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .back-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-            text-decoration: none;
-            color: white;
-        }
-        
+
         .contact-info {
             background-color: #f5f9ff;
             padding: 20px;
@@ -174,6 +152,45 @@
             padding: 2px 5px;
             border-radius: 3px;
             font-weight: 500;
+        }
+
+        .back-button-box {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            color: white;
+        }
+
+        .footer {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 25px 10px;
+            border-top: 1px solid var(--border-color);
+            color: #666;
+            font-size: 0.9em;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--box-shadow);
         }
         
         @media (max-width: 768px) {
@@ -222,6 +239,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -230,29 +248,18 @@
         </div>
         
         <div class="content">
+
             <p>مرحباً بكم في سياسة الخصوصية الخاصة بتطبيق "دليل أسيوط". نحن ندرك أهمية الخصوصية ونلتزم بحماية معلوماتك الشخصية. تشرح هذه الوثيقة سياساتنا المتعلقة بجمع المعلومات واستخدامها والكشف عنها عند استخدامك لخدماتنا.</p>
 
             <h2>1. المعلومات التي نجمعها</h2>
             <p>عند استخدامك لتطبيق "دليل أسيوط"، قد نقوم بجمع الأنواع التالية من المعلومات:</p>
             <ul>
-                <li><strong>معلومات الحساب:</strong> الاسم الكامل، عنوان البريد الإلكتروني، صورة الملف الشخصي، رقم الهاتف.</li>
-                <li><strong>معلومات الموقع:</strong> نطلب إذنك للوصول إلى موقعك الجغرافي لتقديم خدمات مخصصة بناءً على موقعك الحالي.</li>
-                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، معرف فريد للجهاز، وعناوين IP.</li>
-                <li><strong>بيانات الاستخدام:</strong> الصفحات التي تزورها، الميزات التي تستخدمها، وقت ومدة الاستخدام.</li>
-                <li><strong>معلومات الأعمال:</strong> إذا كنت صاحب عمل، نجمع معلومات عن منشأتك التجارية بما في ذلك الاسم، العنوان، ساعات العمل، والصور.</li>
-                <li><strong>بيانات الاتصال:</strong> سجل المراسلات بينك وبين خدمة العملاء.</li>
-            </ul>
-
-            <h2>2. كيفية استخدام معلوماتك</h2>
-            <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
-            <ul>
-                <li>توفير الخدمات المطلوبة وتشغيل التطبيق</li>
-                <li>تحسين تجربة المستخدم وتخصيص المحتوى</li>
-                <li>إرسال التحديثات والإشعارات المهمة</li>
-                <li>تحليل استخدام التطبيق لتحسين أدائه</li>
-                <li>منع الاحتيال وحماية أمن التطبيق</li>
-                <li>الامتثال للقوانين واللوائح المعمول بها</li>
-                <li>التواصل معك بشأن التحديثات والعروض الترويجية</li>
+                <li><strong>معلومات الحساب:</strong> الاسم الكامل، البريد الإلكتروني، صورة الملف الشخصي، رقم الهاتف.</li>
+                <li><strong>معلومات الموقع:</strong> نطلب إذنك للوصول إلى موقعك لتقديم خدمات مخصصة.</li>
+                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، معرف الجهاز، IP.</li>
+                <li><strong>بيانات الاستخدام:</strong> الصفحات التي تزورها والميزات التي تستخدمها.</li>
+                <li><strong>معلومات الأعمال:</strong> إذا كنت صاحب نشاط نقوم بجمع بيانات منشأتك.</li>
+                <li><strong>بيانات الاتصال:</strong> سجل المراسلات مع الدعم الفني.</li>
             </ul>
 
             <div class="contact-info">
@@ -262,32 +269,69 @@
                 <p><strong>عنوان المكتب:</strong> أسيوط، مصر</p>
             </div>
 
-            <h2>3. مشاركة المعلومات</h2>
-            <p>نحن لا نبيع معلوماتك الشخصية لأطراف ثالثة. ومع ذلك، قد نشارك معلوماتك في الحالات التالية:</p>
+            <h2>2. كيفية استخدام معلوماتك</h2>
             <ul>
-                <li>مع مزودي الخدمة الذين يساعدوننا في تشغيل التطبيق (مثل استضافة الويب، تحليل البيانات، معالجة المدفوعات)</li>
-                <li>عندما نعتقد أن الكشف ضروري للامتثال للقوانين أو حماية حقوقنا أو ملكيتنا أو سلامة مستخدمينا أو الآخرين</li>
-                <li>في حالة دمج أو بيع الشركة، قد يتم نقل المعلومات للمالك الجديد</li>
-                <li>مع موافقتك الصريحة في حالات أخرى غير المذكورة هنا</li>
+                <li>تشغيل التطبيق وتقديم الخدمات.</li>
+                <li>تحسين تجربة المستخدم.</li>
+                <li>إرسال التنبيهات المهمة.</li>
+                <li>تحليل أداء التطبيق.</li>
+                <li>الحماية ومنع الاحتيال.</li>
+                <li>الاتصال بك عند الحاجة.</li>
+            </ul>
+
+            <h2>3. مشاركة المعلومات</h2>
+            <ul>
+                <li>مع مزودي الخدمة الموثوقين.</li>
+                <li>عند الامتثال للقانون.</li>
+                <li>في حالة بيع أو دمج الشركة.</li>
+                <li>بموافقتك الصريحة.</li>
             </ul>
 
             <h2>4. حماية المعلومات</h2>
-            <p>نحن نعتمد معايير صناعية لحماية معلوماتك الشخصية، بما في ذلك:</p>
             <ul>
-                <li>استخدام تشفير SSL/TLS لحماية البيانات المنقولة</li>
-                <li>تخزين آمن للمعلومات على خوادم مشفرة</li>
-                <li>تقييد وصول الموظفين إلى المعلومات الشخصية</li>
-                <li>مراجعة منتظمة لممارسات جمع المعلومات وتخزينها ومعالجتها</li>
-                <li>تنفيذ إجراءات أمنية مادية وفنية وإدارية لحماية المعلومات من الوصول غير المصرح به</li>
+                <li>تشفير SSL/TLS.</li>
+                <li>خوادم آمنة.</li>
+                <li>تقييد وصول الموظفين.</li>
+                <li>مراجعات أمنية دورية.</li>
             </ul>
 
             <h2>5. حقوقك</h2>
-            <p>بموجب القوانين المعمول بها، لديك الحق في:</p>
             <ul>
-                <li>الوصول إلى معلوماتك الشخصية التي نحتفظ بها</li>
-                <li>طلب تصحيح المعلومات غير الدقيقة أو غير المكتملة</li>
-                <li>طلب حذف معلوماتك الشخصية في ظروف معينة</li>
-                <li>معارضة معالجة بياناتك أو تقييدها</li>
-                <li>سحب موافقتك على معالجة بياناتك</li>
-                <li>طلب نقل بياناتك إلى طرف آخر</li>
-                <li>تقديم شكوى إلى هيئة حماية البيانات المختصة
+                <li>الوصول لبياناتك.</li>
+                <li>طلب التعديل أو الحذف.</li>
+                <li>الاعتراض على المعالجة.</li>
+                <li>سحب الموافقة.</li>
+                <li>نقل البيانات.</li>
+            </ul>
+
+            <h2>6. ملفات تعريف الارتباط</h2>
+            <p>نستخدم الكوكيز لتحسين تجربتك، ويمكنك تعطيلها من المتصفح.</p>
+
+            <h2>7. روابط خارجية</h2>
+            <p>قد يحتوي التطبيق على روابط لمواقع خارجية ولسنا مسؤولين عن سياساتها.</p>
+
+            <h2>8. التغييرات على السياسة</h2>
+            <p>قد نقوم بتحديث هذه السياسة من وقت لآخر وسيتم إعلامك بالتغييرات الجوهرية.</p>
+
+            <h2>9. الاتصال بنا</h2>
+            <div class="contact-info">
+                <p><strong>البريد الإلكتروني:</strong> <a href="mailto:vip288822@gmail.com">vip288822@gmail.com</a></p>
+                <p><strong>رقم الهاتف:</strong> <a href="tel:+201119366652">+201119366652</a></p>
+                <p><strong>عنوان المراسلة:</strong> أسيوط، مصر</p>
+            </div>
+
+            <div class="back-button-box">
+                <a href="/" class="back-link">العودة إلى الصفحة الرئيسية</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 دليل أسيوط — جميع الحقوق محفوظة  
+        <br>  
+        آخر تحديث: 9 ديسمبر 2024
+    </div>
+
+</body>
+</html>
