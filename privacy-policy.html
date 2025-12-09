@@ -5,50 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية - دليل أسيوط</title>
     <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #e0e0e0;
+        }
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--light-bg);
         }
-        h1 { color: #1a73e8; }
-        .content {
+        
+        .container {
             background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            padding-right: 15px;
+            border-right: 4px solid var(--primary-color);
+        }
+        
+        p, li {
+            color: #444;
+            text-align: justify;
+        }
+        
+        ul {
+            padding-right: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-right: 15px;
+        }
+        
+        li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .last-updated {
+            text-align: left;
+            font-style: italic;
+            color: #666;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-link:hover {
+            background-color: #0d47a1;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>سياسة الخصوصية</h1>
+    <div class="container">
+        <h1>سياسة الخصوصية - دليل أسيوط</h1>
         
+        <p>مرحبًا بكم في سياسة الخصوصية الخاصة بتطبيق دليل أسيوط. نحن نحرص على خصوصيتك ونلتزم بحماية معلوماتك الشخصية. تشرح هذه السياسة كيفية جمع معلوماتك واستخدامها وحمايتها.</p>
+
         <h2>1. المعلومات التي نجمعها</h2>
-        <p>نجمع المعلومات التالية عند استخدامك لتطبيق دليل أسيوط:</p>
+        <p>عند استخدامك لتطبيق دليل أسيوط، قد نقوم بجمع المعلومات التالية:</p>
         <ul>
-            <li>معلومات الحساب (الاسم، البريد الإلكتروني، صورة الملف الشخصي)</li>
-            <li>معلومات الموقع (إذا منحت الإذن)</li>
-            <li>بيانات الاستخدام والتفاعل مع التطبيق</li>
+            <li>معلومات الحساب: الاسم، البريد الإلكتروني، صورة الملف الشخصي</li>
+            <li>معلومات الموقع: إذا منحت الإذن، نجمع موقعك لتقديم خدمات مخصصة</li>
+            <li>معلومات الجهاز: نوع الجهاز، نظام التشغيل، ومعرف فريد</li>
+            <li>بيانات الاستخدام: الصفحات التي تزورها، الميزات التي تستخدمها</li>
+            <li>معلومات الأعمال: إذا كنت صاحب عمل، نجمع معلومات عن منشأتك التجارية</li>
         </ul>
 
-        <h2>2. كيف نستخدم معلوماتك</h2>
-        <p>نستخدم المعلومات التي نجمعها من أجل:</p>
+        <h2>2. كيفية استخدام معلوماتك</h2>
+        <p>نستخدم المعلومات التي نجمعها لـ:</p>
         <ul>
-            <li>توفير الخدمات المطلوبة</li>
-            <li>تحسين تجربة المستخدم</li>
+            <li>توفير الخدمات المطلوبة وتشغيل التطبيق</li>
+            <li>تحسين تجربة المستخدم وتخصيص المحتوى</li>
             <li>إرسال التحديثات والإشعارات المهمة</li>
+            <li>تحليل استخدام التطبيق لتحسين أدائه</li>
+            <li>منع الاحتيال وحماية أمن التطبيق</li>
+            <li>الامتثال للقوانين واللوائح المعمول بها</li>
         </ul>
 
-        <h2>3. حماية المعلومات</h2>
-        <p>نلتزم بحماية معلوماتك الشخصية ونستخدم إجراءات أمان مناسبة.</p>
+        <h2>3. مشاركة المعلومات</h2>
+        <p>لا نبيع معلوماتك الشخصية لأطراف ثالثة. قد نشارك معلوماتك مع:</p>
+        <ul>
+            <li>مزودي الخدمة الذين يساعدوننا في تشغيل التطبيق</li>
+            <li>السلطات المختصة عند الالتزام القانوني</li>
+            <li>في حالة دمج أو بيع الشركة، قد يتم نقل المعلومات للمالك الجديد</li>
+        </ul>
 
-        <p>آخر تحديث: 9 ديسمبر 2024</p>
-        <p>للاتصال بنا: vip288822@gmail.com</p>
+        <h2>4. حماية المعلومات</h2>
+        <p>نلتزم بحماية معلوماتك الشخصية من خلال:</p>
+        <ul>
+            <li>استخدام تشفير قوي لحماية البيانات المنقولة</li>
+            <li>تطبيق إجراءات أمنية صارمة للوصول إلى المعلومات</li>
+            <li>مراجعة ممارسات جمع المعلومات وتخزينها ومعالجتها بانتظام</li>
+            <li>تقييد وصول الموظفين إلى المعلومات الشخصية</li>
+        </ul>
+
+        <h2>5. حقوقك</h2>
+        <p>لديك الحق في:</p>
+        <ul>
+            <li>الوصول إلى معلوماتك الشخصية</li>
+            <li>طلب تصحيح المعلومات غير الدقيقة</li>
+            <li>طلب حذف معلوماتك الشخصية</li>
+            <li>سحب الموافقة على معالجة بياناتك</li>
+            <li>تقديم شكوى إلى هيئة حماية البيانات المختصة</li>
+        </ul>
+
+        <h2>6. التغييرات على سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. وسنقوم بإخطارك بأي تغييرات جوهرية من خلال نشر الإشعار على التطبيق أو عبر البريد الإلكتروني. ننصحك بمراجعة هذه الصفحة بانتظام لمعرفة أي تغييرات.</p>
+
+        <h2>7. الاتصال بنا</h2>
+        <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، يرجى الاتصال بنا على:</p>
+        <p>البريد الإلكتروني: <a href="mailto:vip288822@gmail.com">vip288822@gmail.com</a></p>
+        <p>رقم الهاتف: +201119366652</p>
+
+        <div class="last-updated">
+            <p>آخر تحديث: 9 ديسمبر 2024</p>
+        </div>
         
-        <a href="/">العودة للصفحة الرئيسية</a>
+        <a href="/" class="back-link">العودة للصفحة الرئيسية</a>
     </div>
 </body>
 </html>
